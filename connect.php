@@ -1,8 +1,8 @@
 <?php
 
-$db_host = "localhost";
-$db_user = "root";
-$db_password = "111111";
+$db_host = "DB이름";
+$db_user = "사용자";
+$db_password = "비밀번호";
 $db_name = "member";
 
 $con = new mysqli($db_host, $db_user, $db_password, $db_name); // 데이터베이스 접속
