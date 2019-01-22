@@ -21,6 +21,7 @@ session_start(); // 세션
   <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- 폼에 있는 양식은 서비스로 이용하시면 안됩니다. 저작권 있습니다. -->
 <form name="login_form" action="login_check.php" method="post">
   <svg id="ryan" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
               <path d="M0,150 C0,65 120,65 120,150" fill="#e0a243" stroke="#000" stroke-width="2.5" />
