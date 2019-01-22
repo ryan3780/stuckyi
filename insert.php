@@ -2,7 +2,7 @@
 
 session_start();
 
-$con=mysqli_connect("localhost", "root", 111111);//데이터베이스를 접속하는 $conn이라는 변수 설정
+$con=mysqli_connect("DB이름", "사용자 이름", 비밀번호 );//데이터베이스를 접속하는 $conn이라는 변수 설정
 mysqli_select_db($con, "member");//mysql에 접속하여 db라는 데이터베이스 선택
 
 $today = $_SESSION['today'];
@@ -21,7 +21,7 @@ if($row['date_now']==$today){
 else{
 	$sql = "INSERT INTO given (date_now, date_after , human) VALUES('$today', '$date_e' ,'$human')";
 	mysqli_query($con, $sql);
-	header("Location: http://172.27.212.132:8080/login_ok.php");
+	header("Location: 이동할 페이지 입력 ");
 }
 
 ?>
